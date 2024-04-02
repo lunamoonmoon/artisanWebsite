@@ -1,0 +1,26 @@
+.maincontainer {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 1em;
+}
