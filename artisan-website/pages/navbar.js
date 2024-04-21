@@ -9,13 +9,13 @@ export default function navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className="logo">
+      <div className={styles.logo}>
         <a>Image here</a>
       </div>
-      <div className="nav-buttons">
-        <Link href="/">Christian Tervo</Link>
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/about">About</Link>
+      <div className={styles.navbuttoncontainer}>
+        <Link href="/" className={styles.navbutton}>Christian Tervo</Link>
+        <Link href="/portfolio" className={styles.navbutton}>Portfolio</Link>
+        <Link href="/about" className={styles.navbutton}>About</Link>
       </div>
     </nav>
   );
