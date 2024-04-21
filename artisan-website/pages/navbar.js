@@ -11,12 +11,20 @@ export default function navbar() {
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <a>Image here</a>
+        <h1>Colours of the Warp</h1>
       </div>
       <div className={styles.navbuttoncontainer}>
-        <Link href="/" className={styles.navbutton}>Christian Tervo</Link>
-        <Link href="/portfolio" className={styles.navbutton}>Portfolio</Link>
-        <Link href="/about" className={styles.navbutton}>About</Link>
+        <Link href="/">
+          <button className={styles.navbutton}>Christian Tervo</button>
+        </Link>
+        <Link href="/portfolio">
+          <button className={styles.navbutton}>Portfolio</button>
+        </Link>
+        <Link href="/about">
+          <button className={styles.navbutton}>About</button>
+        </Link>
       </div>
+      <span className={styles.line}></span>
     </nav>
   );
 }

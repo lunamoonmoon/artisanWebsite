@@ -1,5 +1,6 @@
 .maincontainer {
-  position: absolute;
+  position: relative;
+  background-color: rgb(22, 22, 22);
   top: 0px;
   bottom: 0px;
   width: 100%;
@@ -7,15 +8,47 @@
 
 .navbar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
+  flex-direction: column;
   width: 100%;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
-  .navbutton{
-    padding-left: .5em;
+  .logo{
+    display: flex;
+  }
+
+  .navbuttoncontainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+    cursor: pointer;
+
+    .navbutton{
+      display: inline-block;
+      padding: .5em;
+      margin: .25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: sans-serif;
+      background-color: rgb(22, 22, 22);
+      border: none;
+    }
+  
+    .navbutton:hover {
+      cursor: pointer;
+      color: blueviolet;
+      border: blueviolet solid 1px;
+      background:#fff;
+    }
+  }
+
+
+  .line{
+    color: white;
+    display: flex;
+    border-top: 2px solid rgb(217, 217, 217);
+    width: 100%;
   }
 }
 
